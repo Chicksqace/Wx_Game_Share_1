@@ -1,0 +1,1 @@
+<view class="tableBar _menu"><block wx:for="{{tabarList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['toClick',[index,'$0'],[[['tabarList','',index,'url']]]]]]]}}" class="{{[index===currentIndex?'item active':'item']}}" bindtap="__e"><text class="{{['iconfont '+item.icon]}}"></text><text>{{item.name}}</text></view></block></view>
